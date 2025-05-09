@@ -8,8 +8,7 @@ function formatString(input: string, toUpper?: boolean): string{
 
 }
 
-// const result = formatString("rohan", true)
-//  console.log(result);
+
  
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]  {
     let highRated: { title: string; rating: number }[] = []
@@ -21,14 +20,8 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
     return highRated
 }
 
-// const books = [
-//     { title: "Book A", rating: 4.5 },
-//     { title: "Book B", rating: 3.2 },
-//     { title: "Book C", rating: 5.0 },
-//     { title: "Book C", rating: 4.0 }
-//   ];
 
-//   console.log(filterByRating(books));
+
 
 
 function concatenateArrays<T>(...arrays: T[][]): T[]{
@@ -40,11 +33,11 @@ function concatenateArrays<T>(...arrays: T[][]): T[]{
      return array
 }
 
-// console.log(concatenateArrays([1, 2], [3, 4], [5]));
+
 
 class Vheicle {
     private make : string;
-    year : number;
+   private year : number;
 
     constructor(make: string, year: number){
         this.make = make
@@ -66,8 +59,9 @@ class Car extends Vheicle {
     }
 }
 
-// const myCar = new Car("Toyota", 2020, "Corolla");
-// console.log(myCar.getModel());
+ 
+
+
 
 function processValue(value: string | number): number{
     let multiplied = 0
@@ -77,8 +71,8 @@ function processValue(value: string | number): number{
         return multiplied += value*2
     }
 }
-// console.log(processValue('rohan'));
 
+// problem 6
 interface Product {
     name: string;
     price: number;
@@ -101,13 +95,13 @@ interface Product {
   
     return higestPrice
   }
-  
-//   const products =  [
+  const products = [
 
-//   ];
+];
+
+console.log(getMostExpensiveProduct(products));
   
 
-//   console.log(getMostExpensiveProduct(products));
 enum Day {
     Monday,
     Tuesday,
@@ -126,7 +120,7 @@ enum Day {
     }
   }
 
-//   console.log(getDayType(Day.Sunday));
+
 
 async function squareAsync(n: number): Promise<number>{
     if(n<0){
@@ -139,5 +133,5 @@ async function squareAsync(n: number): Promise<number>{
         }, 1000);
     })
 }
-  console.log(squareAsync(4).then(console.log));
+
   
